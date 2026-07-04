@@ -1,217 +1,176 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chocolate Details | Chocotastic</title>
+
+<title>White Chocolate | Chocotastic</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f7efe7;
+background:#f8f1ea;
 }
 
 /* Header */
 
 header{
-    background:#4e2d1c;
-    color:white;
-    padding:18px;
-    text-align:center;
-    font-size:30px;
-    font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+background:#5a3825;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+position:sticky;
+top:0;
+z-index:100;
 }
 
-/* Main */
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:50px auto;
-}
-
-.product{
-    display:flex;
-    gap:40px;
-    flex-wrap:wrap;
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 15px 30px rgba(0,0,0,.12);
-}
-
-.product-image{
-    flex:1;
-}
-
-.product-image img{
-    width:100%;
-    border-radius:15px;
-}
-
-.product-details{
-    flex:1;
-}
-
-.product-details h1{
-    color:#4e2d1c;
-    margin-bottom:15px;
-}
-
-.price{
-    font-size:32px;
-    color:#7b3f00;
-    font-weight:bold;
-    margin-bottom:15px;
-}
-
-.rating{
-    color:gold;
-    font-size:20px;
-    margin-bottom:20px;
-}
-
-.description{
-    color:#555;
-    line-height:1.8;
-    margin-bottom:30px;
-}
-
-.buttons{
-    display:flex;
-    gap:15px;
-}
-
-.buy-btn,
-.cart-btn{
-
-    padding:15px 35px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:17px;
-    transition:.3s;
-
-}
-
-.buy-btn{
-
-    background:#6b3e26;
-    color:white;
-
-}
-
-.buy-btn:hover{
-
-    background:#4e2d1c;
-
+.left{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
 .cart-btn{
-
-    background:#d4a373;
-    color:white;
-
+background:#fff;
+color:#5a3825;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
 }
 
 .cart-btn:hover{
-
-    background:#b87c4c;
-
+background:#f4d7b5;
 }
 
-/* Similar */
-
-.similar{
-
-    margin-top:60px;
-
+.logo{
+height:55px;
+width:170px;
+background:#ffffff20;
+border:2px dashed white;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:14px;
 }
 
-.similar h2{
+/* Title */
 
-    color:#4e2d1c;
-    margin-bottom:25px;
-
+.title{
+text-align:center;
+padding:40px 20px 20px;
 }
 
-.cards{
+.title h1{
+font-size:38px;
+color:#5a3825;
+}
 
+.title p{
+margin-top:10px;
+color:#7b5b45;
+}
+
+/* Products */
+
+.container{
+width:92%;
+max-width:1300px;
+margin:auto;
+padding-bottom:60px;
+}
+
+.products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-
 background:white;
-padding:15px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 10px 20px rgba(0,0,0,.1);
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
 transition:.3s;
-
 }
 
 .card:hover{
-
 transform:translateY(-8px);
-
 }
 
 .card img{
-
 width:100%;
-height:180px;
+height:220px;
 object-fit:cover;
-border-radius:12px;
-
 }
 
-.card a{
+.info{
+padding:18px;
+}
 
-text-decoration:none;
-color:#4e2d1c;
-font-size:18px;
+.info h3{
+color:#5a3825;
+margin-bottom:8px;
+}
+
+.price{
+font-size:22px;
 font-weight:bold;
-display:block;
-margin-top:12px;
-
-}
-
-footer{
-
-margin-top:70px;
-background:#4e2d1c;
-color:white;
-padding:20px;
-text-align:center;
-
-}
-
-@media(max-width:768px){
-
-.product{
-
-flex-direction:column;
-
+color:#b06d2b;
+margin-bottom:18px;
 }
 
 .buttons{
-
-flex-direction:column;
-
+display:flex;
+gap:10px;
 }
 
+.details,
+.addcart{
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.details{
+background:#5a3825;
+color:white;
+}
+
+.details:hover{
+background:#432515;
+}
+
+.addcart{
+background:#e9c8a2;
+color:#5a3825;
+}
+
+.addcart:hover{
+background:#d9ae7c;
+}
+
+footer{
+margin-top:40px;
+padding:25px;
+background:#5a3825;
+text-align:center;
+color:white;
 }
 
 </style>
@@ -222,114 +181,128 @@ flex-direction:column;
 
 <header>
 
-🍫 Chocotastic
+<div class="left">
+
+<a href="cart.html" class="cart-btn">
+🛒 Cart
+</a>
+
+</div>
+
+<div class="logo">
+
+Your Logo Here
+
+</div>
 
 </header>
 
+<div class="title">
+
+<h1>White Chocolate Collection</h1>
+
+<p>Premium White Chocolates for Every Sweet Moment</p>
+
+</div>
+
 <div class="container">
 
-<div class="product">
+<div class="products">
 
-<div class="product-image">
-
-<img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=900" alt="Chocolate">
-
-</div>
-
-<div class="product-details">
-
-<h1>Belgian Dark Chocolate</h1>
-
-<div class="price">$8.99</div>
-
-<div class="rating">
-
-★★★★★
-
-</div>
-
-<p class="description">
-
-Experience the rich taste of premium Belgian Dark Chocolate made from the finest cocoa beans. Smooth texture, intense chocolate flavor, and a delightful sweetness make every bite unforgettable.
-
-Perfect for gifts, special occasions, or simply satisfying your chocolate cravings.
-
-</p>
-
+<div class="card">
+<img src="images/white1.jpg">
+<div class="info">
+<h3>Classic White Chocolate</h3>
+<div class="price">৳320</div>
 <div class="buttons">
-
-<button class="buy-btn">
-
-Buy Now
-
-</button>
-
-<button class="cart-btn">
-
-Add to Cart
-
-</button>
-
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
 </div>
-
 </div>
-
-</div>
-
-<div class="similar">
-
-<h2>🍫 Similar Chocolates</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=500">
-
-<a href="milk-chocolate.html">
-
-Milk Chocolate
-
-</a>
-
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500">
-
-<a href="white-chocolate.html">
-
-White Chocolate
-
-</a>
-
+<img src="images/white2.jpg">
+<div class="info">
+<h3>Almond White Chocolate</h3>
+<div class="price">৳380</div>
+<div class="buttons">
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
+</div>
+</div>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1571506165871-ee72a35bc9d4?w=500">
-
-<a href="hazelnut.html">
-
-Hazelnut Chocolate
-
-</a>
-
+<img src="images/white3.jpg">
+<div class="info">
+<h3>Hazelnut White Chocolate</h3>
+<div class="price">৳400</div>
+<div class="buttons">
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
+</div>
+</div>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=500">
-
-<a href="caramel.html">
-
-Caramel Chocolate
-
-</a>
-
+<img src="images/white4.jpg">
+<div class="info">
+<h3>Vanilla White Chocolate</h3>
+<div class="price">৳350</div>
+<div class="buttons">
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
+</div>
+</div>
 </div>
 
+<div class="card">
+<img src="images/white5.jpg">
+<div class="info">
+<h3>Strawberry White Chocolate</h3>
+<div class="price">৳420</div>
+<div class="buttons">
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="images/white6.jpg">
+<div class="info">
+<h3>Cookies White Chocolate</h3>
+<div class="price">৳390</div>
+<div class="buttons">
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="images/white7.jpg">
+<div class="info">
+<h3>Caramel White Chocolate</h3>
+<div class="price">৳430</div>
+<div class="buttons">
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="images/white8.jpg">
+<div class="info">
+<h3>Premium White Truffle</h3>
+<div class="price">৳480</div>
+<div class="buttons">
+<button class="details">View Details</button>
+<button class="addcart">🛒</button>
+</div>
+</div>
 </div>
 
 </div>
@@ -338,7 +311,7 @@ Caramel Chocolate
 
 <footer>
 
-© 2026 Chocotastic | Sweetness in Every Bite 🍫
+© 2026 Chocotastic | Crafted with Love 🍫
 
 </footer>
 
