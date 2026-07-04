@@ -210,7 +210,7 @@ Your Logo Here
 <div class="products">
 
 <div class="card">
-<img src="images/white1.jpg">
+<img src="Classic.jpg">
 <div class="info">
 <h3>Classic White Chocolate</h3>
 <div class="price">৳320</div>
@@ -222,7 +222,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="images/white2.jpg">
+<img src="almond.jpg">
 <div class="info">
 <h3>Almond White Chocolate</h3>
 <div class="price">৳380</div>
@@ -234,7 +234,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="images/white3.jpg">
+<img src="hazelnut.jpg">
 <div class="info">
 <h3>Hazelnut White Chocolate</h3>
 <div class="price">৳400</div>
@@ -246,7 +246,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="images/white4.jpg">
+<img src="vanilla.jpeg">
 <div class="info">
 <h3>Vanilla White Chocolate</h3>
 <div class="price">৳350</div>
@@ -258,7 +258,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="images/white5.jpg">
+<img src="Strawberry.jpeg">
 <div class="info">
 <h3>Strawberry White Chocolate</h3>
 <div class="price">৳420</div>
@@ -270,7 +270,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="images/white6.jpg">
+<img src="cookies.jpeg">
 <div class="info">
 <h3>Cookies White Chocolate</h3>
 <div class="price">৳390</div>
@@ -282,7 +282,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="images/white7.jpg">
+<img src="icaramel.jpeg">
 <div class="info">
 <h3>Caramel White Chocolate</h3>
 <div class="price">৳430</div>
@@ -294,7 +294,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="images/white8.jpg">
+<img src="truffle.jpeg">
 <div class="info">
 <h3>Premium White Truffle</h3>
 <div class="price">৳480</div>
