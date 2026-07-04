@@ -282,7 +282,7 @@ Your Logo Here
 </div>
 
 <div class="card">
-<img src="icaramel.jpeg">
+<img src="caramel.jpeg">
 <div class="info">
 <h3>Caramel White Chocolate</h3>
 <div class="price">৳430</div>
